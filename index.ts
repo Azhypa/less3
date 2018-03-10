@@ -1,12 +1,12 @@
 import prompt from '@jace1995/readline';
 import {Sample} from './logic';
 
- async function main() {
+async function main() {
   let score = 0;
 
   while (true) {
     const current = new Sample();
-    const answ = await prompt (current.text);
+    const answ = await prompt(current.text);
 
     if (answ == "!exit") {
       console.log(`Содержание алкоголя ~${score / 10}00 промилле!`);
@@ -20,10 +20,5 @@ import {Sample} from './logic';
     }
   }
 }
- main();
 
-
-
-
-
-
+main();
